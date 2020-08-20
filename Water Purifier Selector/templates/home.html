@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<center><h2> Answer a few questions to find a suitable water purifier for you? </h2>
+<form action = 'next' method = 'POST'>
+    {% csrf_token %}
+    <button type = "submit" id="start" >Get Started</button></form>
+    {% endblock %}
+<!-- <form action = "add" method = "post">
+
+   Source of water<br> <input type = "radio" name = "quality" value = "Hard-Water">
+    <label for ="num1">Hard-Water</label><br>
+    <input type = "radio" name = "quality" value = "Soft-Water">
+    <label for = "num2">Soft-Water</label><br><br>
+    Bacteria-level<br><input type = "radio" name = "high" value = "High">
+    <label for ="num1">High Bacteria level</label><br>
+    <input type = "radio" name = "low" value = "Low">
+    <label for = "num2">Low Bacteria level</label><br><br>
+    Electricity Input<br><input type = "radio" name = "num1" value = "Hard-Water">
+    <label for ="num1">Yes</label><br>
+    <input type = "radio" name = "num2" value = "Soft-Water">
+    <label for = "num2">No</label><br><br>
+    Budget<br><input type = "radio" name = "num1" value = "Hard-Water">
+    <label for ="num1">Above 5000</label><br>
+    <input type = "radio" name = "num2" value = "Soft-Water">
+    <label for = "num2">below 5000</label><br><br>
+    <input type = "submit" name = "Submit"></form></center>
+ -->

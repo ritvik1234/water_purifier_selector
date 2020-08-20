@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Filter Selector</title>
+    <link rel="stylesheet" href="{% static '/style.css' %}?{% now "U" %}">
+</head>
+<body bgcolor = "#F8F8F8">
+    <div class = "topbar">
+    <center><h1></h1></center></div><br>
+<center><img src = "{% static "/guide_1.jpg" %}" id = "guide"><br><br>
+<img src = "{% static "/filter.jpg" %}" id = "filter"> </center>
+
+
+{% block content %}
+{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+    <center><h2>What is the source of your water?</h2>
+    <div class = "quesns">
+        <br>
+<form action = "q2" method = "post">
+    {% csrf_token %}
+ <input type = "radio" name = "quality" value = "Hard-Water">
+    <label for ="quality">Underground water, Borewells, Tankers
+        <br>(Hard-Water)</label><br>
+    <input type = "radio" name = "quality" value = "Soft-Water">
+    <label for = "quality">Rivers, Lakes - Supplied by municipality (Soft-Water)</label><br><br>
+    <button type = "submit" id="start" >Next</button></form></div>
+   <!--  <script type="text/Javascript">
+    function checked()
+    {
+        label = document.querySelector('input[name=quality]:checked').value;
+    }
+</script> -->
+{% endblock %}

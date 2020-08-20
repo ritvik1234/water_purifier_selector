@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<center><h3>Filter recommended: {{result}}</h3>
+<h4>Your daily drinking water consumption will be around {{water}} litres</h4></center>
+
+<!-- <h2>{{ans.filter}}</h2> -->
+<!-- usp=sharingwidget=true&amp;headers=false -->
+<center><img src = "{{image.img.url}}" height = 400px><br>
+<form action = "darcy" method = "post">
+    {% csrf_token %}
+    <button type = "submit" id = "start" >Technical Analysis</button></form></center>
+<center><form action = "home" method = "post">
+    {% csrf_token %}
+    <button type = "submit" id = "start" >Go Back</button></form></center>
+{% endblock %}

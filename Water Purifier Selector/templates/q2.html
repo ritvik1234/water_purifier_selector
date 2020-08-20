@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<center><h2>What is the bacteria level?</h2>
+    <div class = "quesns">
+        <br>
+<form action = "q3" method = "post">
+    {% csrf_token %}
+ <input type = "radio" name = "bacteria" value = "High">
+    <label for ="bacteria">High Bacteria and viruses in water
+        <br></label><br>
+    <input type = "radio" name = "bacteria" value = "Low">
+    <label for = "bacteria">Low Bacteria and viruses in water</label><br><br>
+    <button type = "submit" id="start" >Next</button></form>
+{% endblock %}

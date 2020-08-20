@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<center><h2>Technical Analysis through Darcy Law</h2></center>
+<center><iframe src="https://docs.google.com/spreadsheets/d/1Nw9XJDd5fYSUc9XAQV88Z9kMXAuhMQjWZumDWmHzLVM/edit?rm=minimal&widget=true&headers=false" width="320" height="450" frameborder="0" scrolling="no" wdHideSheetTabs=True wdHideGridlines=True></iframe> </center>
+<center><form action = "home" method = "post">
+    {% csrf_token %}
+    <button type = "submit" id = "start" >Go Back</button></form></center>
+{% endblock %}

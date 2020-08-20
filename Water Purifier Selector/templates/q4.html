@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<center><h2>What is your budget?</h2>
+    <div class = "quesns">
+        <br>
+<form action = "q5" method = "post">
+    {% csrf_token %}
+ <input type = "radio" name = "budget" value = "above">
+    <label for ="num1">Above 5000
+        </label><br><br>
+    <input type = "radio" name = "budget" value = "below">
+    <label for = "budget">Below 5000</label><br><br>
+    <button type = "submit" id = "start" >Next</button></form>
+{% endblock %}

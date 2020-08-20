@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<center><h2>Do you have a continuous supply of water and electricity?</h2>
+    <div class = "quesns">
+        <br>
+<form action = "q4" method = "post">
+    {% csrf_token %}
+ <input type = "radio" name = "electricity" value = "Yes">
+    <label for ="electricity">Yes
+        </label><br><br>
+    <input type = "radio" name = "electricity" value = "No">
+    <label for = "electricity">No</label><br><br>
+    <button type = "submit" id = "start" >Next</button></form>
+{% endblock %}

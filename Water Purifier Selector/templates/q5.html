@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<center><h2>How many members are there in your family?</h2>
+    <div class = "quesns">
+        <br>
+<form action = "result" method = "post">
+    {% csrf_token %}
+
+ <input type = "text" name = "members"><br><br>
+
+    <button type = "submit" id="start" >Next</button></form>
+{% endblock %}
